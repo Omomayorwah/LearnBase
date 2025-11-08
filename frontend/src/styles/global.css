@@ -1,0 +1,67 @@
+/* Global Styles */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+:root {
+  --orange: #FF9500;
+  --navy: #003366;
+  --green: #10b981;
+  --red: #ef4444;
+}
+
+body { 
+  font-family: 'Open Sans', sans-serif; 
+  line-height: 1.6; 
+}
+
+.light-theme {
+  --bg: #fff;
+  --bg-2: #f9fafb;
+  --text: #111827;
+  --text-2: #6b7280;
+  --border: #e5e7eb;
+}
+
+.dark-theme {
+  --bg: #111827;
+  --bg-2: #1f2937;
+  --text: #fff;
+  --text-2: #d1d5db;
+  --border: #374151;
+}
+
+body { 
+  background: var(--bg); 
+  color: var(--text); 
+  transition: all 0.3s; 
+}
+
+/* App Layout */
+.app { 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 18px;
+}
+
